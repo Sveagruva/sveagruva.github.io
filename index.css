@@ -175,6 +175,52 @@
 
 
 
-/* 
-415 
-*/
+@media screen and (max-width: 415px){
+
+    .intro-welcome{
+        font-size: 5vh;
+        line-height: 5vh;
+    }
+
+    .intro{
+        align-items: flex-end;
+        background-position: top;
+        min-height: 50vh;
+    }
+
+    .languages-content{
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .languages h2 {
+        font-size: 8vh;
+    }
+
+    .languages h3 {
+        font-size: 2vh;
+    }
+
+    .languages-web {
+        width: 80%;
+    }
+
+    .languages {
+        padding: 70px 0;
+        min-height: unset;
+    }
+
+    .languages .container{
+        min-height: unset;
+    }
+
+    .latest_repositories-content {
+        flex-direction: column;
+    }
+
+    .site {
+        width: 50%;
+        padding: 10px;
+    }
+
+}
