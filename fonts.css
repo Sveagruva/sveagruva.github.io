@@ -1,0 +1,35 @@
+@font-face{
+    font-family: 'LF-R';
+    font-weight: 400;
+    font-style: normal;
+    src:
+    url('fonts/libre-franklin/libre-franklin-v4-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-regular.woff2') format('woff2'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-regular.woff') format('woff'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-regular.ttf') format('truetype'), 
+    url('fonts/libre-franklin/libre-franklin-v4-latin-regular.svg#LibreFranklin') format('svg');
+}
+
+@font-face{
+    font-family: 'LF-M';
+    font-weight: 500;
+    font-style: normal;
+    src:
+    url('fonts/libre-franklin/libre-franklin-v4-latin-500.eot?#iefix') format('embedded-opentype'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-500.woff2') format('woff2'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-500.woff') format('woff'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-500.ttf') format('truetype'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-500.svg#LibreFranklin') format('svg');
+}
+
+@font-face{
+    font-family: 'LF-B';
+    font-weight: 700;
+    font-style: normal;
+    src:
+    url('fonts/libre-franklin/libre-franklin-v4-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-700.woff2') format('woff2'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-700.woff') format('woff'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-700.ttf') format('truetype'),
+    url('fonts/libre-franklin/libre-franklin-v4-latin-700.svg#LibreFranklin') format('svg');
+}

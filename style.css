@@ -1,0 +1,28 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #d3dbe9;
+}
+
+.container{
+    position: relative;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+}
+
+a{
+    opacity: 0.8;
+    text-decoration: none;
+    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a:hover{
+    opacity: 1;
+}
+
+html ::-webkit-scrollbar{ 
+    display: none;
+}
