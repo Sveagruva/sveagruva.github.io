@@ -56,9 +56,11 @@
         <div class="container">
             <h2>latest repositories</h2>
             <div class="latest_repositories-content">
-                <a href="#">fasdfasd</a>
-                <a href="#">asdfasdf</a>
-                <a href="#">fadsfasd</a>
+                <script>
+                    document.write("<a href='" + "https://google.com" + "'>" + "name of re" + "</a>");
+                    document.write("<a href='" + "https://google.com" + "'>" + "name of re" + "</a>");
+                    document.write("<a href='" + "https://google.com" + "'>" + "name of re" + "</a>");
+                </script>
             </div>
         </div>
     </section>
@@ -68,7 +70,7 @@
             <div class="my-sites">
                 <div class="site">
                     <div class="site-name">
-                        <a href="#">Ptable</a>
+                        <a href="https://sveagruva.github.io/Ptable/">Ptable</a>
                     </div>
                     <div class="site-descripcion">
                         Mendeleev's table is beautifully and modernly designed.
@@ -106,6 +108,19 @@
             </div>
         </div>
     </section>
+    <!-- <iframe width="560" height="315" src="https://api.github.com/users/sveagruva/repos" frameborder="0" X-Frame-Options="ALLOW-FROM"></iframe> -->
+    <!-- <script>
+    username = "sveagruva";
+
+    w = window;
+    Promise.all(Array.from(Array(Math.ceil(1+184/30)).keys()).map(p =>
+        fetch(`https://api.github.com/users/{username}/repos?page=${p}`).then(r => r.json())
+    )).then(all => {
+        w.jo = [].concat(...all);
+
+    })
+
+</script> -->
 </main>
 </body>
 </html>
