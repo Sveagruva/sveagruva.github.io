@@ -44,7 +44,7 @@
 .intro-welcome:last-child {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 5px;
     margin-bottom: -180px;
     transition: margin 0.5s linear;
 }
@@ -178,8 +178,9 @@
 @media screen and (max-width: 415px){
 
     .intro-welcome{
-        font-size: 5vh;
+        font-size: 4.6vh;
         line-height: 5vh;
+        position: default;
     }
 
     .intro{
@@ -226,5 +227,4 @@
     .intro-welcome{
         margin-bottom: 0 !important;
     }
-
 }

@@ -11,6 +11,19 @@
     <title>Magic</title>
 </head>
 <body>
+<header>
+    <div class="container">
+        <div class="logo"><a href="https://sveagruva.github.io">sveagruva</a></div>
+        <nav>
+            <ul>
+                <li><a href="#">contacts</a></li>
+                <li><a href="#">web</a></li>
+                <li><a href="#">programming</a></li>
+                <li><a href="#">other sites</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <main>
     <section class="intro">
         <div class="container">
@@ -56,6 +69,18 @@
         <div class="container">
             <h2>latest repositories</h2>
             <div class="latest_repositories-content">
+                <!-- <script>
+                    let url = "https://api.github.com/users/sveagruva/repos";
+                    let response = await  fetch(url);
+                    console.log(response);
+                    if(response.ok){
+                        console.log(response);
+                    }else{
+                        document.querySelector(".latest_repositories").style.display='none';
+                        document.querySelector(".other-sites").style.boxShadow ="none";
+                    }
+                    
+                </script> -->
                 <script>
                     document.write("<a href='" + "https://google.com" + "'>" + "name of re" + "</a>");
                     document.write("<a href='" + "https://google.com" + "'>" + "name of re" + "</a>");
@@ -108,19 +133,6 @@
             </div>
         </div>
     </section>
-    <!-- <iframe width="560" height="315" src="https://api.github.com/users/sveagruva/repos" frameborder="0" X-Frame-Options="ALLOW-FROM"></iframe> -->
-    <!-- <script>
-    username = "sveagruva";
-
-    w = window;
-    Promise.all(Array.from(Array(Math.ceil(1+184/30)).keys()).map(p =>
-        fetch(`https://api.github.com/users/{username}/repos?page=${p}`).then(r => r.json())
-    )).then(all => {
-        w.jo = [].concat(...all);
-
-    })
-
-</script> -->
 </main>
 </body>
 </html>

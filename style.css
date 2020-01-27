@@ -26,3 +26,45 @@ a:hover{
 html ::-webkit-scrollbar{ 
     display: none;
 }
+
+header{
+    background: rgba(0,0,0,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(15px);
+    backdrop-filter: saturate(180%) blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 10000000;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 20px;
+    font-family: "LF-B";
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    font-family: "LF-R";
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    margin: 0 20px;
+}
+
+
+@media screen and (max-width: 415px){
+    header nav{
+        display: none;
+    }
+}
