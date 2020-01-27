@@ -215,6 +215,10 @@
         min-height: unset;
     }
 
+    .languages-label {
+        margin: 0px auto 100px;
+    }
+
     .latest_repositories-content {
         flex-direction: column;
     }
