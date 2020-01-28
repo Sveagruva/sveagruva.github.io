@@ -4,7 +4,7 @@
     background-position: right;
     background-image: url("intro.png"); */
     /* background-color: #000; */
-    background: url("img/intro.png") no-repeat right #000;
+    background: url("../img/intro.png") no-repeat right #000;
     background-size: contain;
     display: flex;
     align-items: center;
