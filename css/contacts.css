@@ -43,4 +43,5 @@ section{
 .contact-img svg{
     height: 100%;
     fill: #222428;
+    display: block;
 }
