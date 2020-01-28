@@ -5,6 +5,10 @@
     color: #d3dbe9;
 }
 
+body{
+    background-color: gray;
+}
+
 .container{
     position: relative;
     max-width: 1250px;

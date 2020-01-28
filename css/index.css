@@ -1,0 +1,234 @@
+.intro{
+    min-height: 100vh;
+    /* background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("intro.png"); */
+    /* background-color: #000; */
+    background: url("img/intro.png") no-repeat right #000;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+.intro-welcome{
+    font-size: 7vh;
+    line-height: 7vh;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    font-family: "LF-B";
+}
+
+.intro-links{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vh;
+}
+
+.intro-links a{
+    line-height: 26px;
+    text-decoration: none;
+    font-family: "LF-R";
+}
+
+.intro .container{
+    overflow: hidden;
+    width: 100%;
+}
+
+.intro-welcome:first-child{
+    visibility: hidden;
+    z-index: -10;
+}
+ 
+.intro-welcome:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -180px;
+    transition: margin 0.5s linear;
+}
+
+.intro:hover .intro-welcome{
+    margin-bottom: 0;
+}
+
+
+/*  languages =================================================================  languages */
+
+.languages{
+    margin-bottom: -1px;
+    min-height: 100vh;
+    background-color: #1f2229;
+    -webkit-box-shadow: inset 0px 78px 96px -59px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 78px 96px -59px rgba(0,0,0,1);
+    box-shadow: inset 0px 78px 96px -59px rgba(0,0,0,1);
+}
+
+.languages-label{
+    font-family: "LF-R";
+    display: inline-block;
+    margin: 100px auto 0;
+    font-size: 5vh;
+}
+
+.languages-content{
+    flex: 1 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages .container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.languages-web{
+    text-align: left;
+}
+
+.languages-programing{
+    text-align: right;
+}
+
+.languages h2{
+    font-size: 15vh;
+    font-family: "LF-M";
+}
+
+.languages h3{
+    font-size: 3vh;
+    font-family: "LF-R";
+}
+
+
+
+/*  latest_repositories =================================================================  latest_repositories */
+
+.latest_repositories{
+    padding: 64px 0;
+    background-color: #121418;
+    text-align: center;
+    -webkit-box-shadow: 0px 12px 41px 20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 12px 41px 20px rgba(0,0,0,0.64);
+    box-shadow: 0px 12px 41px 20px rgba(0,0,0,0.64);
+}
+
+.latest_repositories h2{
+    margin-bottom: 100px;
+    font-family: "LF-M";
+    font-size: 7vh;
+}
+
+.latest_repositories-content{
+    display: flex;
+    justify-content: space-around;
+    font-family: "LF-R";
+    font-size: 5vh;
+}
+
+
+
+
+/*  other-sites =================================================================  other-sites */
+
+
+.other-sites{
+    margin-top: -1px;
+    padding: 65px 0;
+    background-color: #1f2229;
+    -webkit-box-shadow: inset 0px 78px 96px -59px rgba(0,0,0,0.64);
+    -moz-box-shadow: inset 0px 78px 96px -59px rgba(0,0,0,0.64);
+    box-shadow: inset 0px 78px 96px -59px rgba(0,0,0,0.64);
+}
+
+.other-sites h2{
+    font-family: "LF-M";
+    font-size: 8vh;
+    margin-bottom: 50px;
+}
+
+.my-sites{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site{
+    width: 25%;
+    padding: 10px;
+}
+
+.site-name{
+    font-family: "LF-R";
+    font-size: 5vh;
+    margin-bottom: 10px;
+}
+
+.site-descripcion{
+    font-family: "LF-R";
+    text-align: left;
+    font-size: 2vh;
+}
+
+
+
+
+@media screen and (max-width: 415px){
+
+    .intro-welcome{
+        font-size: 4.6vh;
+        line-height: 5vh;
+        position: default;
+    }
+
+    .intro{
+        align-items: flex-end;
+        background-position: top;
+        min-height: 50vh;
+    }
+
+    .languages-content{
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .languages h2 {
+        font-size: 8vh;
+    }
+
+    .languages h3 {
+        font-size: 2vh;
+    }
+
+    .languages-web {
+        width: 80%;
+    }
+
+    .languages {
+        padding: 70px 0;
+        min-height: unset;
+    }
+
+    .languages .container{
+        min-height: unset;
+    }
+
+    .languages-label {
+        margin: 0px auto 100px;
+    }
+
+    .latest_repositories-content {
+        flex-direction: column;
+    }
+
+    .site {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .intro-welcome{
+        margin-bottom: 0 !important;
+    }
+}
