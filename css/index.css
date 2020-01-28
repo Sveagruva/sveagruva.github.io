@@ -180,7 +180,8 @@
     .intro-welcome{
         font-size: 4.6vh;
         line-height: 5vh;
-        position: default;
+        left: 50% !important;
+        transform: translate(-50%, 0)
     }
 
     .intro{
