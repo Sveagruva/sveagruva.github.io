@@ -233,5 +233,6 @@
 
     .latest_repositories-content a{
         margin: 15px 0;
+        line-height: 30px;
     }
 }
