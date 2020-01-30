@@ -129,6 +129,11 @@
     font-size: 5vh;
 }
 
+.latest_repositories-content a{
+    margin: 0 5px;
+    line-height: 40px;
+}
+
 
 /*  other-sites =================================================================  other-sites */
 
