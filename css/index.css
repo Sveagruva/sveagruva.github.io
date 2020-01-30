@@ -130,8 +130,6 @@
 }
 
 
-
-
 /*  other-sites =================================================================  other-sites */
 
 
@@ -231,5 +229,9 @@
 
     .intro-welcome{
         margin-bottom: 0 !important;
+    }
+
+    .latest_repositories-content a{
+        margin: 15px 0;
     }
 }
