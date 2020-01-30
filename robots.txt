@@ -1,1 +1,1 @@
-Sitemap: http://www.example.com/sitemap.xml
+https://sveagruva.github.io/sitemap/sitemap.xml
