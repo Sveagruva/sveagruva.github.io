@@ -37,7 +37,9 @@ section{
     color: inherit;
     font-family: "LF-M";
     font-size: 2.5vw;
-    display: inline;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
     margin: 1vw 5px;
     width: 100%;
 }
