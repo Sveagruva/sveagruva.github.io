@@ -4,7 +4,7 @@ main, body{
 
 h1{
     font-family: "LF-B";
-    font-size: 6vw;
+    font-size: 4vw;
     margin: 50px 0 100px;
 }
 
@@ -37,7 +37,7 @@ section{
     color: inherit;
     font-family: "LF-M";
     font-size: 2.5vw;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: inline-flex;
     margin: 1vw 5px;
@@ -46,12 +46,24 @@ section{
 
 .contact-img svg{
     height: 100%;
+    margin-left: 10px;
     fill: #222428;
     display: block;
 }
 
+.contact-info div{
+    margin-left: auto;
+    color: inherit;
+}
+
+.contact-info div:first-child{
+    margin: 15px 0;
+    margin-left: auto;
+}
+
 .contact-img{
-    display: block;
+    height: 100%;
+    margin-left: 5px;
 }
 
 .contacts-content{
