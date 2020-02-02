@@ -4,7 +4,7 @@ main, body{
 
 h1{
     font-family: "LF-B";
-    font-size: 4vw;
+    font-size: 6rem;
     margin: 50px 0 100px;
 }
 
@@ -17,7 +17,7 @@ section{
 
 .contact-name{
     text-align: right;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: "LF-R";
     margin: 30px 0 0 0;
 }
@@ -25,7 +25,7 @@ section{
 .contact{
     background-color: #d3dbe9;
     width: 100%;
-    padding: 3vw;
+    padding: 3.7rem;
     margin: 30px 0;
     border-radius: 10px;
     display: flex;
@@ -36,7 +36,7 @@ section{
 .contact-info{
     color: inherit;
     font-family: "LF-M";
-    font-size: 35px;
+    font-size: 3.5rem;
     justify-content: space-between;
     align-items: center;
     display: inline-flex;
@@ -69,4 +69,14 @@ section{
 .contacts-content{
     display: inline-flex;
     flex-direction: column;
+}
+
+html{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 415px){
+    html{
+        font-size:  5px;
+    }
 }
