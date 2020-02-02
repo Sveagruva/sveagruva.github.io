@@ -51,7 +51,7 @@ section{
 }
 
 .contact-img{
-    display: inline-block;
+    display: block;
 }
 
 .contacts-content{
