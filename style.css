@@ -15,11 +15,11 @@ body::-webkit-scrollbar-button {
     height: 0px;
 }
 
-body::-webkit-scrollbar{
-    /* height: 100%;
+/* body::-webkit-scrollbar{
+    height: 100%;
     display: fixed;
-    right: 0; */
-}
+    right: 0;
+} */
 
 /* html {
     margin-left: calc(100vw - 100%);
