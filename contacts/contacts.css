@@ -74,6 +74,7 @@ section{
 .contacts-content{
     display: inline-flex;
     flex-direction: column;
+    width: 100%;
 }
 
 html{
