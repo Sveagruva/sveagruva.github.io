@@ -33,7 +33,7 @@ a:hover{
     opacity: 1;
 }
 
-html ::-webkit-scrollbar{ 
+html::-webkit-scrollbar{ 
     display: none;
 }
 
