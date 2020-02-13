@@ -70,5 +70,5 @@ function closeDragElement() {
     document.onmouseup = null;
     document.onmousemove = null;
     scrollbar.style.backgroundColor = colorStatic;
-    window.addEventListener('scroll', calcPosition);
+    // window.addEventListener('scroll', calcPosition);
 }
