@@ -1,3 +1,4 @@
+var margin_from_top = 40; // for header
 var min_height = 40;
 var width = 20;
 var colorStatic = "#6f6e75";
@@ -17,7 +18,6 @@ window.onload = function(){
     var scrollbar = document.getElementById("scrollbar");
     scrollbar.style.position = "fixed";
     scrollbar.style.borderRadius = border_rad;
-    scrollbar.style.top = 0;
     scrollbar.style.right = right_margin;
     scrollbar.style.width = width + "px";
     scrollbar.style.minHeight = min_height + "px";
@@ -32,18 +32,21 @@ window.onload = function(){
 function calcPosition(){
     let heightDocument = document.body.scrollHeight;
     let heightWindow = window.innerHeight;
+    console.log("hi");
     if(heightWindow >= heightDocument){
         scrollbar.style.display = "none";
     }else{
         height = (1 - ((heightDocument - heightWindow)/heightDocument))*heightWindow*MainNumber;
         scrollbar.style.minHeight = height + "px";
-        scrollbar.style.top = (heightWindow-height)*(((heightDocument - heightWindow) - (heightDocument - (pageYOffset + heightWindow)))/(heightDocument - heightWindow)) + "px";
+        height += margin_from_top;
+        scrollbar.style.bottom = (heightWindow - height - (heightWindow-height)*(((heightDocument - heightWindow) - (heightDocument - (pageYOffset + heightWindow)))/(heightDocument - heightWindow))) + "px";
+        scrollbar.style.top = "unset";
     }
 
 }
 
 function dragMouseDown(e) {
-    // window.removeEventListener('scroll', calcPosition);
+    window.removeEventListener('scroll', calcPosition);
     scrollbar.onmouseup = function(){};
     e = e || window.event;
     e.preventDefault();
@@ -60,9 +63,12 @@ function elementDrag(e) {
     e.preventDefault();
     pos2 = pos4 - e.clientY;
     pos4 = e.clientY;
-    if(scrollbar.offsetTop - pos2 >= 0 && scrollbar.offsetTop - pos2 <= window.innerHeight - height){
+    if(scrollbar.offsetTop - pos2 - margin_from_top >= 0 && scrollbar.offsetTop - pos2 <= window.innerHeight - height + margin_from_top){
+        var hi = heightWindow - scrollbar.offsetTop;
         scrollbar.style.top = (scrollbar.offsetTop - pos2) + "px";
-        window.scrollTo(pageXOffset,(heightDocument - heightWindow)*((scrollbar.offsetTop) / (heightWindow - height)));
+        scrollbar.style.bottom = "unset";
+        window.scrollTo(pageXOffset,(heightDocument - heightWindow)*((scrollbar.offsetTop - margin_from_top) / (heightWindow - height)));
+        // window.scrollTo(pageXOffset,(heightWindow - height - (heightDocument - heightWindow)*((scrollbar.offsetBottom) / (heightWindow - height))));
     }
 }
 
@@ -70,5 +76,5 @@ function closeDragElement() {
     document.onmouseup = null;
     document.onmousemove = null;
     scrollbar.style.backgroundColor = colorStatic;
-    // window.addEventListener('scroll', calcPosition);
+    window.addEventListener('scroll', calcPosition);
 }
