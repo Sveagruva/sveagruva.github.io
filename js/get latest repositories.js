@@ -96,6 +96,6 @@ dataLates.reverse();
 
 for (let i = 0; i < 3; i++) {
     if(dataLates[i] != undefined){
-        document.write("<a href='" + link[dataLates[i]] + "'>" + name[dataLates[i]] + "</a>");
+        document.write("<a target='_blank' href='" + link[dataLates[i]] + "'>" + name[dataLates[i]] + "</a>");
     }
 }
