@@ -1,10 +1,10 @@
 var margin_from_top = 40; // for header
 var min_height = 40;
-var width = 20;
+var width = 10;
 var colorStatic = "#6f6e75";
 var colorHover = "#94929c";
 var colorMove = "#555958";
-var border_rad = "5px";
+var border_rad = "10px";
 var right_margin = "4px";
 var MainNumber = 0.8; // 0.000000001 - 1
 var pos2 = 0, pos4 = 0, height;
