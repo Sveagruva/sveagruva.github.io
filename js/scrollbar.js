@@ -15,7 +15,7 @@ window.onload = function(){
     if(window.innerWidth > 415){
         const body = document.querySelector("body");
         //body.insertAdjacentHTML('afterend', '<style>html::-webkit-scrollbar{display: none;}</style>'); if you don't know how to hide default scrollbar
-        body.insertAdjacentHTML('afterend', '<div id="scrollbar"></div>');
+        body.insertAdjacentHTML('beforeend', '<div id="scrollbar"></div>');
         var scrollbar = document.getElementById("scrollbar");
         scrollbar.style.position = "fixed";
         scrollbar.style.borderRadius = border_rad;
