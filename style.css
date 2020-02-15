@@ -82,16 +82,16 @@ header li{
     display: none;
 }
 
-/* input[type="checkbox"]:checked + div> label.mobile-btn{
-    background-color: #fff;
-} */
+input[type="checkbox"]:checked + div.container nav{
+    max-height: 160px;
+}
 
+.header-btn-lines{
+    transition: all .4s linear;
+}
 
 input[type="checkbox"]:checked +div.container>div>label.mobile-btn>span{
-    transition: all 100.s linear;
     transform: rotate(45deg);
-    /* left: unset;
-    bottom: unset; */
     left: 0%;
     top: 50%;
 }
@@ -100,18 +100,20 @@ input[type="checkbox"]:checked + div.container>div>label.mobile-btn>span:last-ch
     transform: rotate(-45deg) !important;
 }
 
-input[type="checkbox"]:checked + div.container nav{
-    display: block !important;
+header nav{
+    transition: max-height 1s ease;
 }
 
 
 @media screen and (max-width: 415px){
+
     header nav{
-        display: none;
+        max-height: 0;
+        overflow: hidden;
     }
+
     .mobile-btn{
         display: block;
-        /* margin-right: 10px; */
         position: relative;
     }
 
@@ -141,18 +143,14 @@ input[type="checkbox"]:checked + div.container nav{
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-        transition: all .4s;
     }
 
     .header-btn-lines:last-child{
-        top: unset;
-        bottom: 0;
+        top: 100%;
     }
 
     header li{
         width: 100%;
-        margin: 0;
         margin: 10px 0;
     }
 
@@ -163,7 +161,12 @@ input[type="checkbox"]:checked + div.container nav{
 
     header nav{
         width: 100%;
-
     }
 
 }
+
+
+@keyframes grow {
+    0% {height: 20px;}
+    100% {height:199px;}
+  }

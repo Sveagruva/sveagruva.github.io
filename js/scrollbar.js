@@ -12,21 +12,23 @@ var pos2 = 0, pos4 = 0, height;
 
 
 window.onload = function(){
-    const body = document.querySelector("body");
-    //body.insertAdjacentHTML('afterend', '<style>html::-webkit-scrollbar{display: none;}</style>'); if you don't know how to hide default scrollbar
-    body.insertAdjacentHTML('afterend', '<div id="scrollbar"></div>');
-    var scrollbar = document.getElementById("scrollbar");
-    scrollbar.style.position = "fixed";
-    scrollbar.style.borderRadius = border_rad;
-    scrollbar.style.right = right_margin;
-    scrollbar.style.width = width + "px";
-    scrollbar.style.minHeight = min_height + "px";
-    scrollbar.style.backgroundColor = colorStatic;
-    scrollbar.onmouseover = function(){scrollbar.style.backgroundColor = colorHover};
-    scrollbar.onmouseleave = function(){scrollbar.style.backgroundColor = colorStatic};
-    calcPosition();
-    scrollbar.onmousedown = dragMouseDown;
-    window.addEventListener('scroll', calcPosition);
+    if(window.innerWidth > 415){
+        const body = document.querySelector("body");
+        //body.insertAdjacentHTML('afterend', '<style>html::-webkit-scrollbar{display: none;}</style>'); if you don't know how to hide default scrollbar
+        body.insertAdjacentHTML('afterend', '<div id="scrollbar"></div>');
+        var scrollbar = document.getElementById("scrollbar");
+        scrollbar.style.position = "fixed";
+        scrollbar.style.borderRadius = border_rad;
+        scrollbar.style.right = right_margin;
+        scrollbar.style.width = width + "px";
+        scrollbar.style.minHeight = min_height + "px";
+        scrollbar.style.backgroundColor = colorStatic;
+        scrollbar.onmouseover = function(){scrollbar.style.backgroundColor = colorHover};
+        scrollbar.onmouseleave = function(){scrollbar.style.backgroundColor = colorStatic};
+        calcPosition();
+        scrollbar.onmousedown = dragMouseDown;
+        window.addEventListener('scroll', calcPosition);
+    }
 };
 
 function calcPosition(){
