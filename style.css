@@ -101,7 +101,7 @@ input[type="checkbox"]:checked + div.container>div>label.mobile-btn>span:last-ch
 }
 
 header nav{
-    transition: max-height 1s ease;
+    transition: max-height .7s ease;
 }
 
 
