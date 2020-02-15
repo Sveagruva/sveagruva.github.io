@@ -94,8 +94,12 @@ orderdates(data, 0);
 dataLates.pop();
 dataLates.reverse();
 
+const rep = document.querySelector(".latest_repositories-content");
 for (let i = 0; i < 3; i++) {
     if(dataLates[i] != undefined){
-        document.write("<a target='_blank' href='" + link[dataLates[i]] + "'>" + name[dataLates[i]] + "</a>");
+        // document.write("<a target='_blank' href='" + link[dataLates[i]] + "'>" + name[dataLates[i]] + "</a>");
+
+        //body.insertAdjacentHTML('afterend', '<style>html::-webkit-scrollbar{display: none;}</style>'); if you don't know how to hide default scrollbar
+        rep.insertAdjacentHTML('beforeend', "<a target='_blank' href='" + link[dataLates[i]] + "'>" + name[dataLates[i]] + "</a>");
     }
 }
