@@ -72,9 +72,98 @@ header li{
     margin: 0 20px;
 }
 
+.mobile-btn{
+    display: none;
+    height: 1em;
+    width: 2em;
+}
+
+#toggle{
+    display: none;
+}
+
+/* input[type="checkbox"]:checked + div> label.mobile-btn{
+    background-color: #fff;
+} */
+
+
+input[type="checkbox"]:checked +div.container>div>label.mobile-btn>span{
+    transition: all 100.s linear;
+    transform: rotate(45deg);
+    /* left: unset;
+    bottom: unset; */
+    left: 0%;
+    top: 50%;
+}
+
+input[type="checkbox"]:checked + div.container>div>label.mobile-btn>span:last-child{
+    transform: rotate(-45deg) !important;
+}
+
+input[type="checkbox"]:checked + div.container nav{
+    display: block !important;
+}
+
 
 @media screen and (max-width: 415px){
     header nav{
         display: none;
     }
+    .mobile-btn{
+        display: block;
+        /* margin-right: 10px; */
+        position: relative;
+    }
+
+    header>div.container{
+        flex-wrap: wrap;
+    }
+
+    .header-top-line{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 6px;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-btn-lines{
+        width: 80%;
+        height: 1px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+        transition: all .4s;
+    }
+
+    .header-btn-lines:last-child{
+        top: unset;
+        bottom: 0;
+    }
+
+    header li{
+        width: 100%;
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    header ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    header nav{
+        width: 100%;
+
+    }
+
 }

@@ -125,13 +125,15 @@
 .latest_repositories-content{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-family: "LF-R";
     font-size: 5vh;
 }
 
 .latest_repositories-content a{
-    margin: 0 10px;
-    line-height: 40px;
+    margin: 15px 5px;
+    line-height: 30px;
+    word-break: break-all;
 }
 
 
@@ -236,8 +238,9 @@
         margin-bottom: 0 !important;
     }
 
-    .latest_repositories-content a{
+    /* .latest_repositories-content a{
         margin: 15px 0;
         line-height: 30px;
     }
+} */
 }

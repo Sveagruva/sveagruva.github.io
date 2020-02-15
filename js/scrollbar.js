@@ -32,7 +32,6 @@ window.onload = function(){
 function calcPosition(){
     let heightDocument = document.body.scrollHeight;
     let heightWindow = window.innerHeight;
-    console.log("hi");
     if(heightWindow >= heightDocument){
         scrollbar.style.display = "none";
     }else{
