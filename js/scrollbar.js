@@ -7,7 +7,7 @@ var colorMove = "#555958";
 var border_rad = "10px";
 var right_margin = "4px";
 var MainNumber = 0.8; // 0.000000001 - 1
-var pos2 = 0, pos4 = 0, height;
+var pos2 = 0, pos4 = 0, height; //don't touch
 //in pixels of course
 
 
@@ -43,7 +43,6 @@ function calcPosition(){
         scrollbar.style.bottom = (heightWindow - height - (heightWindow-height)*(((heightDocument - heightWindow) - (heightDocument - (pageYOffset + heightWindow)))/(heightDocument - heightWindow))) + "px";
         scrollbar.style.top = "unset";
     }
-
 }
 
 function dragMouseDown(e) {

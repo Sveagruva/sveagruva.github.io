@@ -76,13 +76,3 @@ section{
     flex-direction: column;
     width: 100%;
 }
-
-html{
-    font-size: 14px;
-}
-
-@media screen and (max-width: 415px){
-    html{
-        font-size:  5px;
-    }
-}
