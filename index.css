@@ -17,6 +17,7 @@
     display: inline-block;
     color: #fff;
     font-family: "LF-B";
+    text-shadow: 3px 2px 2px #000;
 }
 
 .intro-links{
@@ -29,28 +30,14 @@
     line-height: 26px;
     text-decoration: none;
     font-family: "LF-R";
+    color: #3acf97;
+    font-size: 10.5px;
 }
 
 .intro .container{
-    overflow: hidden;
     width: 100%;
-}
-
-.intro-welcome:first-child{
-    visibility: hidden;
-    z-index: -10;
-}
- 
-.intro-welcome:last-child {
-    position: absolute;
-    bottom: 0;
-    left: 5px;
-    margin-bottom: -180px;
-    transition: margin 0.5s linear;
-}
-
-.intro:hover .intro-welcome{
-    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 
