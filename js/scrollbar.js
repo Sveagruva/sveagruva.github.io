@@ -1,4 +1,4 @@
-var margin_from_top = 40; // for header
+var margin_from_top = 40;
 var min_height = 40;
 var width = 10;
 var colorStatic = "#6f6e75";
@@ -8,13 +8,11 @@ var border_rad = "10px";
 var right_margin = "0px";
 var MainNumber = 0.8; // 0.000000001 - 1
 var pos2 = 0, pos4 = 0, height; //don't touch
-//in pixels of course
 
 
 window.onload = function(){
     if(window.innerWidth > 415){
         const body = document.querySelector("body");
-        //body.insertAdjacentHTML('afterend', '<style>html::-webkit-scrollbar{display: none;}</style>'); if you don't know how to hide default scrollbar
         body.insertAdjacentHTML('beforeend', '<div id="scrollbar"></div>');
         var scrollbar = document.getElementById("scrollbar");
         scrollbar.style.position = "fixed";
@@ -68,7 +66,6 @@ function elementDrag(e) {
         scrollbar.style.top = (scrollbar.offsetTop - pos2) + "px";
         scrollbar.style.bottom = "unset";
         window.scrollTo(pageXOffset,(heightDocument - heightWindow)*((scrollbar.offsetTop - margin_from_top) / (heightWindow - height)));
-        // window.scrollTo(pageXOffset,(heightWindow - height - (heightDocument - heightWindow)*((scrollbar.offsetBottom) / (heightWindow - height))));
     }
 }
 
