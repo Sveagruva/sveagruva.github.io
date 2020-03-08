@@ -11,8 +11,8 @@
 }
 
 .intro-welcome{
-    font-size: 7vh;
-    line-height: 7vh;
+    font-size: 5rem;
+    line-height: 5rem;
     font-weight: bold;
     display: inline-block;
     color: #fff;
@@ -168,13 +168,11 @@
 
 
 @media screen and (max-width: 415px){
-
-    .intro-welcome{
-        font-size: 4.6vh;
-        line-height: 5vh;
-        left: 50% !important;
-        transform: translate(-50%, 0);
+    .intro .container{
+        width: 100%;
+        display: block;
     }
+
 
     .intro{
         align-items: flex-end;
@@ -220,14 +218,4 @@
         width: 50%;
         padding: 10px;
     }
-
-    .intro-welcome{
-        margin-bottom: 0 !important;
-    }
-
-    /* .latest_repositories-content a{
-        margin: 15px 0;
-        line-height: 30px;
-    }
-} */
 }
