@@ -169,7 +169,7 @@ h1{
     font-family: "LF-R";
     text-align: left;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.6rem;
 }
 
 @media screen and (max-width:1400px){
