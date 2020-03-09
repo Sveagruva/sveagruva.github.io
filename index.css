@@ -234,4 +234,9 @@ h1{
         width: 50%;
         padding: 10px;
     }
+
+    .site-descripcion{
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+    }
 }
