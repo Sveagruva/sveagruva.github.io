@@ -13,6 +13,9 @@ body{
 html{
     max-width: 100%;
     font-size: 14px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
 }
 
 @media screen and (max-width:1110px){
@@ -47,7 +50,15 @@ a:hover{
 
 html::-webkit-scrollbar{ 
     display: none;
+    width: 0px;
+    background: transparent;
 }
+
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+    html{
+      scrollbar-width: none;
+    }
+  }
 
 header{
     background: rgba(0,0,0,0.7);
