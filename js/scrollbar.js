@@ -1,4 +1,4 @@
-var margin_from_top = 40;
+var margin_from_top = 36;
 var min_height = 40;
 var width = 10;
 var colorStatic = "#6f6e75";
