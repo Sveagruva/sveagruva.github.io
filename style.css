@@ -54,7 +54,8 @@ header{
     background: rgba(0,0,0,0.7);
     -webkit-backdrop-filter: saturate(180%) blur(15px);
     backdrop-filter: saturate(180%) blur(15px);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 10000000;
 }
