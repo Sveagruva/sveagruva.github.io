@@ -62,7 +62,6 @@ function elementDrag(e) {
     pos2 = pos4 - e.clientY;
     pos4 = e.clientY;
     if(scrollbar.offsetTop - pos2 - margin_from_top >= 0 && scrollbar.offsetTop - pos2 <= window.innerHeight - height + margin_from_top){
-        var hi = heightWindow - scrollbar.offsetTop;
         scrollbar.style.top = (scrollbar.offsetTop - pos2) + "px";
         scrollbar.style.bottom = "unset";
         window.scrollTo(pageXOffset,(heightDocument - heightWindow)*((scrollbar.offsetTop - margin_from_top) / (heightWindow - height)));
