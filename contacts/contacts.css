@@ -5,7 +5,7 @@ main, body{
 h1{
     font-family: "LF-B";
     font-size: 6rem;
-    margin: 50px 0 100px;
+    padding: 50px 0 100px;
 }
 
 section{
