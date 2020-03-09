@@ -16,9 +16,15 @@ html{
     font-size: 14px;
 }
 
+@media screen and (max-width:1110px){
+    html{
+        font-size: 9px;
+    }
+}
+
 @media screen and (max-width: 415px){
     html{
-        font-size:  6px;
+        font-size:  6.2px;
     }
 }
 
@@ -26,7 +32,7 @@ html{
     position: relative;
     max-width: 1250px;
     margin: 0 auto;
-    padding: 8px;
+    padding: 0 8px;
     text-align: center;
 }
 

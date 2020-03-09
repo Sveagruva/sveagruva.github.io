@@ -1,9 +1,17 @@
+h1{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
 .intro{
     min-height: 100vh;
-    /* background-repeat: no-repeat;
-    background-position: right;
-    background-image: url("intro.png"); */
-    /* background-color: #000; */
     background: url("img/intro.jpg") no-repeat right #000;
     background-size: contain;
     display: flex;
@@ -23,7 +31,6 @@
 .intro-links{
     display: flex;
     justify-content: space-between;
-    font-size: 1vh;
 }
 
 .intro-links a{
@@ -56,7 +63,7 @@
     font-family: "LF-R";
     display: inline-block;
     margin: 100px auto 0;
-    font-size: 5vh;
+    font-size: 5vh; 
 }
 
 .languages-content{
@@ -81,12 +88,12 @@
 }
 
 .languages h2{
-    font-size: 15vh;
+    font-size: 10rem;
     font-family: "LF-M";
 }
 
 .languages h3{
-    font-size: 3vh;
+    font-size: 2rem;
     font-family: "LF-R";
 }
 
@@ -104,9 +111,9 @@
 }
 
 .latest_repositories h2{
-    margin-bottom: 100px;
+    margin-bottom: 7rem;
     font-family: "LF-M";
-    font-size: 7vh;
+    font-size: 5.5rem;
 }
 
 .latest_repositories-content{
@@ -114,11 +121,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: "LF-R";
-    font-size: 5vh;
+    font-size: 4.5rem;
 }
 
 .latest_repositories-content a{
-    margin: 15px 5px;
+    margin: 1rem 5px;
     line-height: 30px;
     word-break: break-all;
 }
@@ -138,7 +145,7 @@
 
 .other-sites h2{
     font-family: "LF-M";
-    font-size: 8vh;
+    font-size: 6rem;
     margin-bottom: 50px;
 }
 
@@ -154,43 +161,42 @@
 
 .site-name{
     font-family: "LF-R";
-    font-size: 5vh;
+    font-size: 4.5rem;
     margin-bottom: 10px;
 }
 
 .site-descripcion{
     font-family: "LF-R";
     text-align: left;
-    font-size: 2vh;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
-
-
-
-@media screen and (max-width: 415px){
+@media screen and (max-width:1400px){
     .intro .container{
         width: 100%;
         display: block;
     }
 
-
     .intro{
-        align-items: flex-end;
         background-position: top;
-        min-height: 50vh;
+        align-items: flex-end;
     }
 
+    .intro-welcome{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1110px){
     .languages-content{
         flex-direction: column;
         justify-content: unset;
     }
 
-    .languages h2 {
-        font-size: 8vh;
-    }
-
     .languages h3 {
-        font-size: 2vh;
+        margin: 3px 0;
     }
 
     .languages-web {
@@ -212,6 +218,16 @@
 
     .latest_repositories-content {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .intro{
+        min-height: 50vh;
+    }
+
+    .intro-welcome{
+        margin-bottom: unset;
     }
 
     .site {
