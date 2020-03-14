@@ -1,1 +1,4 @@
 https://sveagruva.github.io/sitemap/sitemap.xml
+User-agent: *
+Disallow: /header.html
+Disallow: https://github.sveagruva.site/header.html
