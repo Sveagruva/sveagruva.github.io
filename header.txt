@@ -5,7 +5,7 @@
         <nav>
             <ul>
                 <li><a href="/contacts/">contacts</a></li>
-                <li><a href="#">web</a></li>
+                <li><a href="/languages/web/">web</a></li>
                 <li><a href="#">programming</a></li>
                 <li><a href="#">other sites</a></li>
             </ul>
