@@ -71,9 +71,16 @@
         </div>
     </section>
 </main>
-    <script src="/SVcomfortable/main.js"></script>
     <script src="js/scrollbar.js"></script>
-    <script>document.querySelector("body").insertAdjacentHTML('afterbegin',getWebHTMLContent("/header.html"));</script>
-    <script src="js/get latest repositories.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/getRepositories.js"></script>
+    <script>
+        const rep = document.querySelector(".latest_repositories-content");
+        for (let i = 0; i < 3; i++) {
+            if(json[i] != undefined){
+                rep.insertAdjacentHTML('beforeend', "<a target='_blank' href='" + json[i].svn_url + "'>" + json[i].name + "</a>");
+            }
+        }
+    </script>
 </body>
 </html>

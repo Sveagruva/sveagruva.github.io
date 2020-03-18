@@ -1,0 +1,70 @@
+main{
+    min-height: 100vh;
+}
+
+main, body{
+    background-color: #1f2229;
+}
+
+a {
+    opacity: 1;
+}
+
+h1{
+    font-family: "LF-B";
+    font-size: 85px;
+    padding: 50px 0 100px;
+    text-align: center;
+}
+
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language{
+    width: 33%;
+    padding: 0 0.5rem;
+}
+
+.language h2{
+    font-size: 42px;
+    font-family: "LF-M";
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.repository{
+    padding: 1.5rem;
+    display: block;
+    background-color: rgb(50, 54, 64);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.name{
+    font-size: 30px;
+    padding-right: 0.8em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.repository:hover{
+    background-color: rgb(46, 48, 53);
+    transition: background-color .15s linear;
+}
+
+.description{
+    font-size: 15px;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 415px){
+    .language{
+        width: 100%;
+    }
+}
