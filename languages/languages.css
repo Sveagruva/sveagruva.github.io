@@ -70,7 +70,7 @@ h1{
     }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 570px){
     .language{
         width: 100%;
         padding-bottom: 2rem; 
