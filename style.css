@@ -24,7 +24,7 @@ html{
     }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 560px){
     html{
         font-size:  6.2px;
     }
@@ -130,7 +130,7 @@ header nav{
 }
 
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 560px){
     
     header nav{
         max-height: 0;
