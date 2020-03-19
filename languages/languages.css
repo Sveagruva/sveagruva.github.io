@@ -63,8 +63,16 @@ h1{
     word-break: break-word;
 }
 
+
+@media screen and (max-width:950px){
+    .language{
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 415px){
     .language{
         width: 100%;
+        padding-bottom: 2rem; 
     }
 }
