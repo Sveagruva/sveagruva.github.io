@@ -11,7 +11,7 @@ var pos2 = 0, pos4 = 0, height; //don't touch
 
 
 window.onload = function(){
-    if(window.innerWidth > 415){
+    if(window.innerWidth > 560){
         const body = document.querySelector("body");
         body.insertAdjacentHTML('beforeend', '<div id="scrollbar"></div>');
         var scrollbar = document.getElementById("scrollbar");
