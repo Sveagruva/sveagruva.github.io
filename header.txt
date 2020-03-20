@@ -6,8 +6,8 @@
             <ul>
                 <li><a href="/contacts/">contacts</a></li>
                 <li><a href="/languages/web/">web</a></li>
-                <li><a href="#">programming</a></li>
-                <li><a href="#">other sites</a></li>
+                <li><a href="/languages/programming/">programming</a></li>
+                <li><a href="/#otherSites">other sites</a></li>
             </ul>
         </nav>
     </div>

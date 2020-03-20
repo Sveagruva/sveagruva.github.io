@@ -1,0 +1,15 @@
+.repository{
+    width: 32.5%;
+}
+
+@media screen and (max-width:950px){
+    .repository{
+        width: 49.5%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .repository{
+        width: 100%;
+    }
+}

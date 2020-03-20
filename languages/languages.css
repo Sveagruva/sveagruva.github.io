@@ -20,6 +20,7 @@ h1{
 .languages{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .language{
@@ -39,7 +40,7 @@ h1{
     display: block;
     background-color: rgb(50, 54, 64);
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: left;
     cursor: pointer;
 }
